@@ -20,6 +20,12 @@ public class Ecker_WoerterRaten {
             keepRunning = detectWin(word, result, keepRunning);
         }
 
+        winnerMessage(result);
+    }
+
+    private static void winnerMessage(String result) {
+        System.out.println();
+        System.out.println("Das Wort war " + result);
         System.out.println();
         System.out.println("===============");
         System.out.println("====Victory====");
