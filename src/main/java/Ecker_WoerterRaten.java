@@ -49,7 +49,7 @@ public class Ecker_WoerterRaten {
         String helpResult = "";
 
         for (int i = 0; i <  word.length(); i++) {
-            if (hint == word.charAt(i) || result.charAt(i) != '.') {
+            if (Character.toUpperCase(hint) == Character.toUpperCase(word.charAt(i)) || result.charAt(i) != '.') {
                 helpResult += word.charAt(i);
             } else {
                 helpResult += '.';
